@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="baseurl.HandlingAds">
+      <class name="Windows_handling.MultipleWindowshandling">
         <methods>
           <include name="beforeTest"/>
+          <include name="OpenWindow"/>
         </methods>
-      </class> <!-- baseurl.HandlingAds -->
+      </class> <!-- Windows_handling.MultipleWindowshandling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
