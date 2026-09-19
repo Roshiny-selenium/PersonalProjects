@@ -6,6 +6,8 @@ import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class BaseTest
 
@@ -26,11 +28,18 @@ public class BaseTest
 	
   
 
-//  @AfterMethod
-//  public void closewindow()
-//  {
-//	  driver.quit();
+ @AfterMethod
+  public void closewindow()
+  {
+	  
+
+    if (driver != null) 
+    {
+        driver.quit();
+    }
+  }
+}
 //	  
 //  }
 
-}
+

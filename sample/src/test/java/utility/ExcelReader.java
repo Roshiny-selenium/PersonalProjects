@@ -11,6 +11,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 import org.apache.poi.sl.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.AfterTest;
@@ -38,15 +39,34 @@ public class ExcelReader extends BaseTest
 	  //create object and get the arrays 
      Object[][] data = new Object[rowcount-1][columncount];
      
+     
+     
      //looping the excel  , here for rows i==1  because 0 initializes the header
      for(int i=1 ; i<rowcount ; i++)
      {
-       for(int j=1 ; i<columncount ; j++)
+       for(int j=0 ; j<columncount ; j++)
        {
-    	   data [i-1][j]= sh.getRow(1).getCell(1).toString();
+    	  // data [i-1][j]= sh.getRow(i).getCell(j).toString();
+    	   
+    	   //Initialize empty cell to avoid null pointer exception
+           Cell cell = sh.getRow(i).getCell(j);
+
+           if (cell != null)
+           {
+               data[i - 1][j] = cell.toString();
+           } else {
+               data[i - 1][j] = "";
+           }
         }
+    
+       
+       
+       
+       
      }
      
+   
+	
 	return data;
     
   }

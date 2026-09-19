@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeTest;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
@@ -34,6 +35,9 @@ public class LoginTest extends BaseTest
 	  System.out.println("Password is : " + password );
 	  System.out.println("Expected is : " + expected );
 	  
+	  //click on login link
+	  driver.findElement(By.xpath("//a[@href='/account/login']")).click();
+	  
 	  //Enter username 
 	  driver.findElement(By.id("customer_email")).sendKeys("roshinyharidharan1998@gmail.com");
 	  
@@ -44,18 +48,16 @@ public class LoginTest extends BaseTest
 	  driver.findElement(By.xpath("//input[@value='Sign In']")).click();
 	  
 	  //Get the actual result
-	  String actual = driver.getCurrentUrl();
+	 
 	  
-	  if(expected.equals(actual))
+	  if(expected.equals("success"))
 	  {
-		 String title = driver.getTitle();
-		 System.out.println("Title is : " + title);
-		 
-		 Assert.assertEquals(actual ,expected);
+		  
+		 driver.findElement((By.xpath("//a[@href='/account']"))).getText();
+		
+	 }
                 
-         
-	  }
-	  else if (!expected.equals(actual))
+	  else if (!expected.equals("success"))
 	  {
 		  System.out.println("Incorrect email or password");
 		  
