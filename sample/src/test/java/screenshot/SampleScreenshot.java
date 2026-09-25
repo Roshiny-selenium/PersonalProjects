@@ -61,6 +61,8 @@ public class SampleScreenshot  extends BaseTest
 		 System.out.println("Login is unsuccessful");
 		 driver.close();
 	 }
+	 
+	 //StringBuilder sb = new StringBuilder();
 	  
   }
   }

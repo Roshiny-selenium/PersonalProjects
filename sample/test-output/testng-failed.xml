@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="screenshot.SampleScreenshot">
+      <class name="datepicker.Enter_date_manually">
         <methods>
-          <include name="closewindow"/>
-          <include name="homepageScreenshot"/>
+          <include name="Enter_date"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- screenshot.SampleScreenshot -->
+      </class> <!-- datepicker.Enter_date_manually -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

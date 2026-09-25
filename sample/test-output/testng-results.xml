@@ -1,73 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-18T14:09:51 IST" name="Default suite" finished-at="2026-09-18T14:13:03 IST" duration-ms="191865">
+  <suite started-at="2026-09-22T19:58:40 IST" name="Default suite" finished-at="2026-09-22T19:58:49 IST" duration-ms="8452">
     <groups>
     </groups>
-    <test started-at="2026-09-18T14:09:51 IST" name="Default test" finished-at="2026-09-18T14:13:03 IST" duration-ms="191865">
-      <class name="screenshot.SampleScreenshot">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:screenshot.SampleScreenshot@c8c12ac]" started-at="2026-09-18T14:09:51 IST" name="beforeMethod" finished-at="2026-09-18T14:09:58 IST" duration-ms="6285" status="PASS">
+    <test started-at="2026-09-22T19:58:40 IST" name="Default test" finished-at="2026-09-22T19:58:49 IST" duration-ms="8452">
+      <class name="table_practice.Table">
+        <test-method signature="Rowscolumns()[pri:0, instance:table_practice.Table@564fabc8]" started-at="2026-09-22T19:58:40 IST" name="Rowscolumns" finished-at="2026-09-22T19:58:49 IST" duration-ms="8398" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="homepageScreenshot()[pri:0, instance:screenshot.SampleScreenshot@c8c12ac]" started-at="2026-09-18T14:09:58 IST" name="homepageScreenshot" finished-at="2026-09-18T14:13:02 IST" duration-ms="184820" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //a[@href='/account'] (tried for 180 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 156.0, moz:accessibilityChecks: false, moz:buildID: 20260909172920, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 35852, moz:profile: C:\Users\labsa\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 4919d25c-df36-4867-a789-fca86e42e261]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@href='/account'] (tried for 180 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 156.0, moz:accessibilityChecks: false, moz:buildID: 20260909172920, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 35852, moz:profile: C:\Users\labsa\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 4919d25c-df36-4867-a789-fca86e42e261
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at screenshot.SampleScreenshot.homepageScreenshot(SampleScreenshot.java:40)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homepageScreenshot -->
-        <test-method is-config="true" signature="closewindow()[pri:0, instance:screenshot.SampleScreenshot@c8c12ac]" started-at="2026-09-18T14:13:02 IST" name="closewindow" finished-at="2026-09-18T14:13:03 IST" duration-ms="704" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closewindow -->
-      </class> <!-- screenshot.SampleScreenshot -->
+        </test-method> <!-- Rowscolumns -->
+      </class> <!-- table_practice.Table -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
